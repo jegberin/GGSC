@@ -299,6 +299,24 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-cta-vibrant {
+  background-color: #ff6b35 !important;
+  border-color: #ff6b35 !important;
+  color: var(--white) !important;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
+.btn-cta-vibrant:hover {
+  background-color: #e55a2b !important;
+  border-color: #e55a2b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+}
+
 .phone-display {
   font-size: 1.5rem;
   font-weight: 700;
