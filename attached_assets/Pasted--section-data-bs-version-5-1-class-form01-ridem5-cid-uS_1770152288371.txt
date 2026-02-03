@@ -1,0 +1,78 @@
+
+<section data-bs-version="5.1" class="form01 ridem5 cid-uSeCwKhlgj" id="form01-19">
+    
+
+    
+    
+
+    <div class="container-fluid">
+        <div class="row flex-row-reverse">
+            
+            <div class="col-12 col-lg-6">
+                <div class="mbr-form form-wrapper" data-form-type="formoid">
+<!--Formbuilder Form-->
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="GoGreenSteamClean website"><input type="hidden" name="email" data-form-email="true" value="wVdWVNyOcdS9zpKJ2xj6vimjF2ZQLgE+Dt3Ni+c223roBlJCwC12GFK14zoUg3gLYk03jCQKj1H2URdraFSLvGMgHlezH3R/v/Q5VjMqz/1ItKkbxE7f5JRrwhcpQXoQ.7PRJEkpDiBj0nDS7tIa2lUOEXTx/aqR+eFh5GK4Mm3r6g2hpbro/5sRtijiR6qHdzwPhjaz/NsJOdtnDSfDOWUSnc8zTFJkrf8u1hu5oOUsq+xu6ek6LdcgpYRHyyYeL">
+<div class="row">
+<div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem! </div>
+</div>
+<div class="dragArea row">
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3 mb-3" data-for="name">
+<label for="name-form01-19" class="form-control-label mbr-fonts-style display-4">NAME*</label>
+<input type="text" name="name" data-form-field="name" class="form-control display-4" value="" id="name-form01-19">
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3" data-for="email">
+<label for="email-form01-19" class="form-control-label mbr-fonts-style display-4">E-MAIL*</label>
+<input type="email" name="email" data-form-field="email" class="form-control display-4" value="" id="email-form01-19">
+</div>
+<div data-for="number" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+<label for="number-form01-19" class="form-control-label mbr-fonts-style display-4">PHONE*</label>
+<input type="number" name="number" data-form-field="number" class="form-control display-4" max="" min="0" step="1" value="" id="number-form01-19">
+</div>
+<div data-for="Request" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+<label for="Request-form01-19" class="form-control-label mbr-fonts-style display-4">MESSAGE</label>
+<textarea name="Request" data-form-field="Request" class="form-control display-4" id="Request-form01-19"></textarea>
+</div>
+<div class="col mbr-section-btn">
+<button type="submit" class="w-100 w-100 w-100 btn btn-primary display-4">SEND NOW</button>
+</div>
+</div>
+</form><!--Formbuilder Form-->
+</div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="content-wrapper">
+                    <h3 class="mbr-section-subtitle mbr-fonts-style display-2">
+                        <strong>Contact for a Quote</strong></h3>
+                    <div class="list-wrapper">
+                        <ul class="list mbr-fonts-style display-4">
+                            <li class="item-wrap"><strong>Go Green Steam Clean<br>Ratheven<br></strong><strong style="font-size: 1.125rem;">Portlaoise<br><b style="color: rgb(0, 0, 0); font-size: 1.125rem;">Co. Laois<br><b style="font-size: 1.125rem;">R32 DY00</b><br></b></strong></li>
+                            <li class="item-wrap"><strong>www.gogreensteamclean.ie</strong></li>
+                            <li class="item-wrap"><strong>085-836 0077</strong></li>
+                            <li class="item-wrap"><strong>gogreensteamclean.ie@gmail.com</strong></li>
+                            <li class="item-wrap"><br></li>
+                        </ul>
+                    </div>
+                    <div class="content-wrap">
+                        <p class="mbr-desc mbr-fonts-style display-5">
+                            <strong>Connect with us on social media</strong>
+                        </p>
+                        <div class="social-wrapper">
+                            <div class="social-wrap">
+                                <div class="soc-item">
+                                    <a href="https://www.facebook.com/darren.delaney.397" target="_blank">
+                                        <span class="mbr-iconfont socicon-facebook socicon"></span>
+                                    </a>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -75,59 +75,104 @@
 <!-- Contact Section -->
 <section class="section-eco">
   <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-info-box text-center h-100">
-          <div class="mb-3">
-            <i class="fas fa-phone fa-3x" style="color: var(--primary-green);"></i>
-          </div>
-          <h4>Call Us Directly</h4>
-          <p class="fs-3 fw-bold mb-1"><a href="tel:+353858360077" class="btn btn-cta-vibrant btn-lg">085-836 0077</a></p>
-          <p class="text-muted mb-0">Monday to Friday</p>
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <div class="contact-form-wrapper p-4 p-lg-5 bg-white rounded-4 shadow">
+          <h3 class="mb-4" style="color: var(--primary-green);">Request a Free Quote</h3>
+          <form action="https://formsubmit.co/gogreensteamclean.ie@gmail.com" method="POST" id="contact-form">
+            <input type="hidden" name="_subject" value="New Quote Request from Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://gogreensteamclean.ie/contact.html">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Name *</label>
+              <input type="text" class="form-control form-control-lg" id="name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email *</label>
+              <input type="email" class="form-control form-control-lg" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold">Phone *</label>
+              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" required placeholder="Your phone number">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control form-control-lg" id="message" name="message" rows="4" placeholder="Tell us about your cleaning needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-eco-primary btn-lg w-100">
+              <i class="fas fa-paper-plane me-2"></i>Send Message
+            </button>
+          </form>
         </div>
       </div>
       
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-info-box text-center h-100">
-          <div class="mb-3">
-            <i class="fas fa-envelope fa-3x" style="color: var(--primary-green);"></i>
+      <div class="col-lg-6">
+        <div class="contact-details">
+          <h3 class="mb-4" style="color: var(--primary-green);">Contact Details</h3>
+          
+          <div class="contact-info-box mb-4">
+            <div class="d-flex align-items-start">
+              <div class="me-3">
+                <i class="fas fa-map-marker-alt fa-2x" style="color: var(--primary-green);"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Go Green Steam Clean</h5>
+                <p class="mb-0">Ratheven<br>Portlaoise<br>Co. Laois<br>R32 DY00</p>
+              </div>
+            </div>
           </div>
-          <h4>Email Us</h4>
-          <p class="fs-5 mb-0"><a href="mailto:gogreensteamclean.ie@gmail.com">gogreensteamclean.ie@gmail.com</a></p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-info-box text-center h-100">
-          <div class="mb-3">
-            <i class="fas fa-map-marker-alt fa-3x" style="color: var(--primary-green);"></i>
+          
+          <div class="contact-info-box mb-4">
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-phone fa-2x" style="color: var(--primary-green);"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Call Us</h5>
+                <a href="tel:+353858360077" class="btn btn-cta-vibrant">085-836 0077</a>
+                <p class="text-muted mb-0 mt-2">Monday to Friday</p>
+              </div>
+            </div>
           </div>
-          <h4>Our Location</h4>
-          <p class="mb-1">Ratheven, Portlaoise</p>
-          <p class="mb-0">Co. Laois, R32 DY00</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row mt-5 justify-content-center">
-      <div class="col-lg-6 text-center">
-        <div class="contact-info-box">
-          <h4><i class="fas fa-share-alt me-2"></i>Connect With Us</h4>
-          <div class="d-flex gap-3 mt-3 justify-content-center">
-            <a href="https://www.facebook.com/share/18HQcdftXD/" target="_blank" rel="noopener" class="btn btn-eco-outline btn-lg">
-              <i class="fab fa-facebook-f me-2"></i>Facebook
-            </a>
-            <a href="https://www.instagram.com/gogreensteamclean.ie" target="_blank" rel="noopener" class="btn btn-eco-outline btn-lg">
-              <i class="fab fa-instagram me-2"></i>Instagram
-            </a>
+          
+          <div class="contact-info-box mb-4">
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-envelope fa-2x" style="color: var(--primary-green);"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Email Us</h5>
+                <a href="mailto:gogreensteamclean.ie@gmail.com">gogreensteamclean.ie@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-info-box mb-4">
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-globe fa-2x" style="color: var(--primary-green);"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Website</h5>
+                <p class="mb-0">www.gogreensteamclean.ie</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-info-box">
+            <h5><i class="fas fa-share-alt me-2"></i>Connect With Us</h5>
+            <div class="d-flex gap-3 mt-3">
+              <a href="https://www.facebook.com/share/18HQcdftXD/" target="_blank" rel="noopener" class="btn btn-eco-outline">
+                <i class="fab fa-facebook-f me-2"></i>Facebook
+              </a>
+              <a href="https://www.instagram.com/gogreensteamclean.ie" target="_blank" rel="noopener" class="btn btn-eco-outline">
+                <i class="fab fa-instagram me-2"></i>Instagram
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="row mt-4 justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="areas-served">
+        
+        <div class="areas-served mt-4">
           <h5><i class="fas fa-map-marker-alt me-2"></i>Areas We Serve</h5>
           <div>
             <span class="badge">Laois</span>
