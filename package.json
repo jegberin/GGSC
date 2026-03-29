@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p public && cp *.html public/ && cp sitemap.xml public/ && cp CNAME public/ && cp -r assets public/"
+    "build": "mkdir -p public && cp *.html public/ && cp sitemap.xml public/ && cp CNAME public/ && cp -r assets public/",
+    "deploy": "npm run build && npx wrangler pages deploy public"
   },
   "keywords": [],
   "author": "",
