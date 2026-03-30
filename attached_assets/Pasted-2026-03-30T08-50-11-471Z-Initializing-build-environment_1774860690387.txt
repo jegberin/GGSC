@@ -1,0 +1,41 @@
+2026-03-30T08:50:11.471Z	Initializing build environment...
+2026-03-30T08:50:11.471Z	Initializing build environment...
+2026-03-30T08:50:15.674Z	Success: Finished initializing build environment
+2026-03-30T08:50:18.079Z	Cloning repository...
+2026-03-30T08:50:25.647Z	Restoring from dependencies cache
+2026-03-30T08:50:25.649Z	Restoring from build output cache
+2026-03-30T08:50:25.653Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2026-03-30T08:50:26.243Z	Installing project dependencies: npm clean-install --progress=false
+2026-03-30T08:50:29.028Z	
+2026-03-30T08:50:29.028Z	added 86 packages, and audited 87 packages in 2s
+2026-03-30T08:50:29.034Z	
+2026-03-30T08:50:29.034Z	25 packages are looking for funding
+2026-03-30T08:50:29.034Z	  run `npm fund` for details
+2026-03-30T08:50:29.035Z	
+2026-03-30T08:50:29.035Z	5 vulnerabilities (2 moderate, 3 high)
+2026-03-30T08:50:29.035Z	
+2026-03-30T08:50:29.035Z	To address all issues, run:
+2026-03-30T08:50:29.035Z	  npm audit fix
+2026-03-30T08:50:29.035Z	
+2026-03-30T08:50:29.035Z	Run `npm audit` for details.
+2026-03-30T08:50:29.757Z	Executing user build command: npm run build
+2026-03-30T08:50:30.040Z	
+2026-03-30T08:50:30.041Z	> workspace@1.0.0 build
+2026-03-30T08:50:30.041Z	> mkdir -p public && cp *.html public/ && cp sitemap.xml public/ && cp CNAME public/ && cp -r assets public/
+2026-03-30T08:50:30.041Z	
+2026-03-30T08:50:30.120Z	Success: Build command completed
+2026-03-30T08:50:30.718Z	Executing user deploy command: npx wrangler pages deploy public
+2026-03-30T08:50:32.177Z	npm warn exec The following package was not found and will be installed: wrangler@4.78.0
+2026-03-30T08:50:43.626Z	
+2026-03-30T08:50:43.627Z	 ⛅️ wrangler 4.78.0
+2026-03-30T08:50:43.627Z	───────────────────
+2026-03-30T08:50:45.524Z	
+2026-03-30T08:50:45.590Z	✘ [ERROR] A request to the Cloudflare API (/accounts/08696d58f3debf289379db745274f8f9/pages/projects/gogreensteamclean) failed.
+2026-03-30T08:50:45.590Z	
+2026-03-30T08:50:45.591Z	  Project not found. The specified project name does not match any of your existing projects. [code: 8000007]
+2026-03-30T08:50:45.591Z	  
+2026-03-30T08:50:45.591Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2026-03-30T08:50:45.591Z	
+2026-03-30T08:50:45.591Z	
+2026-03-30T08:50:45.597Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-03-30_08-50-42_670.log"
+2026-03-30T08:50:45.654Z	Failed: error occurred while running deploy command
