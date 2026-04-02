@@ -62,7 +62,16 @@ Laois, Kildare, Carlow, Kilkenny, Tipperary, Offaly, and Westmeath
 - Commercial Cleaning
 - Water Tank Cleaning (Attic tanks, legionella control)
 
+## Image Conventions
+- All images are WebP format for performance
+- Naming: `{service}-{type}.webp` e.g. `carpet-cleaning-1---before.webp`
+- Logo files: `go-green-steam-clean-logo.webp` (130px nav) and `go-green-steam-clean-logo-footer.webp` (128px footer)
+- Hero images have `fetchpriority="high"` and a `<link rel="preload">` in `<head>`
+- Below-fold/gallery images have `loading="lazy"`
+- No unused images should be kept in `assets/images/`
+
 ## Recent Changes
+- April 2026: Converted all JPG images to WebP (up to 72% file size savings); deleted 19 unused image files; reduced image folder from 19MB to 10MB; renamed all whatsapp-named files to descriptive names; added lazy loading to below-fold images; added fetchpriority="high" and preload hints for hero/LCP images on all pages
 - February 2026: Updated footer copyright year to 2026
 - February 2026: Replaced car interior cleaning with water tank cleaning service
 - February 2026: Added vibrant orange CTA buttons for better visibility on green backgrounds
