@@ -586,6 +586,17 @@ body {
   margin: 0.25rem;
   border-radius: 4px;
   font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.areas-served a.badge:hover,
+.areas-served a.badge:focus {
+  background: var(--pale-green);
+  color: var(--primary-green);
+  border-color: var(--light-green);
 }
 
 @media (max-width: 768px) {
@@ -680,3 +691,450 @@ body {
     height: 250px;
   }
 }
+
+/* ========================================================================
+   Trust badge row (under hero, site-wide)
+   ======================================================================== */
+.trust-bar {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.trust-bar .trust-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem 2rem;
+  color: var(--slate-medium);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.trust-bar .trust-items span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.trust-bar .trust-items i {
+  color: var(--primary-green);
+  font-size: 1rem;
+}
+
+.trust-bar .trust-counties {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: var(--slate-light);
+  font-size: 0.85rem;
+}
+
+.trust-bar .trust-counties i {
+  color: var(--primary-green);
+  margin-right: 0.35rem;
+}
+
+/* ========================================================================
+   Response-time promise pill
+   ======================================================================== */
+.response-promise {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--pale-green);
+  color: var(--primary-green);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.response-promise i {
+  color: var(--primary-green);
+}
+
+/* ========================================================================
+   Floating action buttons (WhatsApp + mobile phone)
+   ======================================================================== */
+
+/* Mobile phone CTA - visible on small screens only */
+.mobile-call-fab {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-call-fab {
+    display: flex;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 1040;
+    background: #ff6b35;
+    color: #ffffff;
+    width: auto;
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+    text-decoration: none;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+    font-size: 1rem;
+    animation: fab-pulse 2.2s ease-in-out infinite;
+  }
+
+  .mobile-call-fab:hover,
+  .mobile-call-fab:focus {
+    color: #ffffff;
+    background: #e55a2b;
+  }
+
+  .mobile-call-fab i {
+    font-size: 1.1rem;
+  }
+
+  /* leave space so the FAB doesn't cover the last CTA on very short viewports */
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@keyframes fab-pulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(255, 107, 53, 0.45); }
+  50% { box-shadow: 0 6px 28px rgba(255, 107, 53, 0.75); }
+}
+
+/* WhatsApp floating chat button - visible on all viewports */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1041;
+  background: #25D366;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-fab i {
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.whatsapp-fab:hover,
+.whatsapp-fab:focus {
+  background: #1ebe57;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-fab::after {
+  content: 'Chat on WhatsApp';
+  position: absolute;
+  right: calc(100% + 0.6rem);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(45, 52, 54, 0.92);
+  color: #ffffff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+@media (min-width: 992px) {
+  .whatsapp-fab:hover::after,
+  .whatsapp-fab:focus::after {
+    opacity: 1;
+  }
+}
+
+/* On mobile where the Call Now pill is also present, stack WhatsApp above it */
+@media (max-width: 991px) {
+  .whatsapp-fab {
+    bottom: 5rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-fab i {
+    font-size: 1.6rem;
+  }
+
+  /* hide the desktop-only tooltip on mobile */
+  .whatsapp-fab::after {
+    display: none;
+  }
+}
+
+/* ========================================================================
+   Google Reviews section (homepage)
+   ======================================================================== */
+.reviews-section {
+  background: var(--off-white);
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviews-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews-rating-badge .google-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--slate-dark);
+}
+
+.reviews-rating-badge .google-logo span:nth-child(1) { color: #4285F4; }
+.reviews-rating-badge .google-logo span:nth-child(2) { color: #EA4335; }
+.reviews-rating-badge .google-logo span:nth-child(3) { color: #FBBC05; }
+.reviews-rating-badge .google-logo span:nth-child(4) { color: #4285F4; }
+.reviews-rating-badge .google-logo span:nth-child(5) { color: #34A853; }
+.reviews-rating-badge .google-logo span:nth-child(6) { color: #EA4335; }
+
+.reviews-rating-badge .rating-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--slate-dark);
+}
+
+.reviews-rating-badge .rating-stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+}
+
+.reviews-rating-badge .rating-count {
+  color: var(--slate-medium);
+  font-size: 0.95rem;
+}
+
+.review-card {
+  background: var(--white);
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card .stars {
+  color: #fbbf24;
+  margin-bottom: 0.75rem;
+}
+
+.review-card .quote {
+  color: var(--slate-dark);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1;
+  font-size: 0.98rem;
+}
+
+.review-card .reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.review-card .reviewer-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-green);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.review-card .reviewer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card .reviewer-name {
+  font-weight: 600;
+  color: var(--slate-dark);
+  font-size: 0.95rem;
+}
+
+.review-card .reviewer-location {
+  color: var(--slate-light);
+  font-size: 0.85rem;
+}
+
+/* ========================================================================
+   FAQ accordion (service & county pages)
+   ======================================================================== */
+.faq-section .accordion {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq-section .accordion-item {
+  border: 1px solid var(--border-color);
+  border-radius: 10px !important;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.faq-section .accordion-button {
+  background: var(--white);
+  color: var(--slate-dark);
+  font-weight: 600;
+  padding: 1.1rem 1.25rem;
+  border: none;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background: var(--pale-green);
+  color: var(--primary-green);
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+  border-color: transparent;
+}
+
+.faq-section .accordion-body {
+  color: var(--slate-medium);
+  line-height: 1.65;
+  padding: 1.25rem;
+}
+
+/* ========================================================================
+   Opening hours display block
+   ======================================================================== */
+.opening-hours {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.opening-hours .day {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+  font-size: 0.95rem;
+}
+
+.opening-hours .day .label {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.opening-hours .day.closed .time {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* on contact page, dark-on-light variant */
+.opening-hours-light {
+  color: var(--slate-medium);
+}
+.opening-hours-light .day .label {
+  color: var(--slate-dark);
+}
+
+/* ========================================================================
+   Contact page info banner (response time)
+   ======================================================================== */
+.contact-response-banner {
+  background: var(--pale-green);
+  border-left: 4px solid var(--primary-green);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--slate-dark);
+}
+
+.contact-response-banner i {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.contact-response-banner strong {
+  color: var(--primary-green);
+}
+
+/* ========================================================================
+   County landing page grid
+   ======================================================================== */
+.towns-served {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.towns-served .town {
+  background: var(--white);
+  color: var(--slate-dark);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ========================================================================
+   Phone-first contact helper line
+   ======================================================================== */
+.phone-first-note {
+  background: #fff8f3;
+  border: 1px dashed #ff6b35;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--slate-dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.phone-first-note a {
+  color: #ff6b35;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phone-first-note a:hover {
+  text-decoration: underline;
+}
+
